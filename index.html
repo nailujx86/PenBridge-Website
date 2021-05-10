@@ -8,7 +8,8 @@
     <title>PenBridge | Use any tablet as a graphics tablet for your PC</title>
     <link href="assets/small-frost.css" type="text/css" rel="stylesheet">
     <link href="assets/utils-frost.css" type="text/css" rel="stylesheet">
-    <meta name="description" content="PenBridge allows you to use your pen enabled device, for example a Surface Tablet, an iPad, a Chuwi Tablet as a drawing tablet for your main Windows Device.">
+    <meta name="description"
+        content="PenBridge allows you to use your pen enabled device, for example a Surface Tablet, an iPad or a Samsung Tablet as a drawing tablet for your main Windows Device.">
     <meta name="keywords" content="graphics tablet, virtual tablet, virtualtablet, surface, pen remote">
     <style>
         .i .card {
@@ -29,9 +30,20 @@
             display: flex;
         }
 
+        .screenshot {
+            text-align: center;
+        }
+
+        .screenshot>img {
+            width: 65%;
+        }
+
         @media (max-width: 769px) {
             .r {
                 display: block;
+            }
+            .screenshot>img {
+                width: 95%;
             }
         }
 
@@ -40,16 +52,11 @@
             font-family: "Segoe UI Emoji";
         }
 
-        .badge > div {
+        .badge>div {
             margin-left: auto;
             margin-right: auto;
-        }
-
-        .screenshot {
-            text-align: center;
-        }
-        .screenshot > img {
-            width: 65%;
+            box-shadow: 0 4px 10px 0 rgba(0, 0, 0, .1), 0 4px 20px 0 rgba(0, 0, 0, .15);
+            border-radius: 4px;
         }
     </style>
 </head>
@@ -57,11 +64,13 @@
 <body>
     <div class="c">
         <h1>PenBridge</h1>
-        <h5>v0.3.1</h5>
+        <h5>v0.3.2</h5>
         <p>
-            PenBridge is an Application you can use to use any pen enabled device as a wireless digitizer for your Windows Device.<br>
-            This means, you can use your pen enabled device, for example a Surface Tablet, an iPad, a Chuwi Tablet
-            as a drawing tablet for your PC!
+            PenBridge is an Application that lets you use any pen enabled device regardless of its OS as a wireless
+            digitizer for your
+            Windows Device.
+            This means, you can use any device that supports a stylus, be it a Surface Tablet, an iPad or a Samsung
+            Tablet with a S Pen as a Graphics Tablet for your PC!
         </p>
         <div class="screenshot">
             <img src="assets/Mockup.png" alt="Mockup">
@@ -94,7 +103,7 @@
                     <div class="c">
                         <h3>Usage <span class="emoji">📑</span></h3>
                         <ol>
-                            <li>Install the Application on your main device using the Button below</li>
+                            <li>Install the Application on your main device using the link above</li>
                             <li>Launch PenBridge</li>
                             <li>Connect using the browser on your tablet using the shown IP Adress</li>
                             <li>👩‍🎨</li>
@@ -135,8 +144,12 @@
         <h3>Changelog ⏲</h3>
         <ul>
             <li>
+                <h4>v0.3.2</h4>
+                Improved local IP detection and added QR code for easier connection
+            </li>
+            <li>
                 <h4>v0.3.1</h4>
-                Improve User Experience by updating explanations
+                Improved User Experience by updating explanations
             </li>
             <li>
                 <h4>v0.3.0</h4>
