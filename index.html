@@ -52,11 +52,10 @@
             font-family: "Segoe UI Emoji";
         }
 
-        .badge>div {
-            margin-left: auto;
-            margin-right: auto;
-            box-shadow: 0 4px 10px 0 rgba(0, 0, 0, .1), 0 4px 20px 0 rgba(0, 0, 0, .15);
-            border-radius: 4px;
+        ms-store-badge {
+            display: flex;
+            justify-content: center;
+            transform: scale(0.8);
         }
     </style>
 </head>
@@ -73,13 +72,13 @@
         <div class="screenshot">
             <img src="assets/Mockup.png" alt="Mockup">
         </div>
-        <div id="mspb-7cc4jhu9b9jr" class="badge 9P7K45N5SND6"></div>
-        <script src="https://storebadge.azureedge.net/src/badge-1.8.4.js"></script>
-        <script>
-            mspb('9P7K45N5SND6', function (badge) {
-                document.getElementById('mspb-7cc4jhu9b9jr').innerHTML = badge;
-            });
-        </script>
+        <script type="module" src="https://get.microsoft.com/badge/ms-store-badge.bundled.js"></script>
+        <ms-store-badge
+            productid="9P7K45N5SND6"
+            window-mode="popup"
+            theme="auto"
+            language="de">
+        </ms-store-badge>
 
         <div class="r">
             <div class="i 4">
