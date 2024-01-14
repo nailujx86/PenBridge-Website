@@ -63,7 +63,7 @@
 <body>
     <div class="c">
         <h1>PenBridge</h1>
-        <h5>Beta v0.5.0</h5>
+        <h5>Beta v0.6.0</h5>
         <p>
             PenBridge is an application that allows you to send pen and touch input from any device to your Windows
             device. This means, you can use any device, be it a Surface Tablet, an iPad or a Samsung Tablet with
@@ -87,9 +87,10 @@
                         <h3>Features <span class="emoji">🧪</span></h3>
                         <ul>
                             <li>Low-latency pen input transfer</li>
-                            <li>Support for tilt and pressure detection of input pens</li>
-                            <li>Eraser and second button support for input pens</li>
+                            <li>Support for tilt and pressure detection</li>
+                            <li>Eraser and second button support</li>
                             <li>Multitouch recognition</li>
+                            <li>Multi-Monitor support</li>
                             <li>Lightweight and installation only necessary on receiving device</li>
                         </ul>
                     </div>
@@ -102,7 +103,7 @@
                         <ol>
                             <li>Install the application on your main device</li>
                             <li>Launch PenBridge</li>
-                            <li>Connect to the displayed IP using a browser on your secondary device</li>
+                            <li>Connect to the displayed IP using a browser or scan the QR Code on your secondary device</li>
                             <li>Enter the pin displayed in PenBridge on your secondary device</li>
                             <li>👩‍🎨</li>
                         </ol>
@@ -116,13 +117,20 @@
                         <ul>
                             <li>Stable network connection between devices</li>
                             <li>Windows > 1809 on receiving device</li>
-                            <li>A recent browser on the sending device</li>
+                            <li>A recent browser (preferably edge or chrome) on the sending device</li>
                             <li>A second device with a digitizer</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
+        <h3>Utilities🔌</h3>
+        <ul>
+            <li>
+                <h4>Blender Keybindings</h4>
+                You can download PenBridge Keybindings for Blender 2.93 here: <a href="./get/PenBridge.py">Download Blender Keybindings</a>
+            </li>
+        </ul>
         <h3>Troubleshooting 🔧</h3>
         <ul>
             <li>
@@ -141,6 +149,12 @@
         </ul>
         <h3>Changelog ⏲</h3>
         <ul>
+            <li>
+                <h4>v0.6.0</h4>
+                Added multi-monitor support. Enter "m" in PenBridge to switch the input to the current monitor<br/>
+                Added a help page. View by entering "help" or "?"<br/>
+                Improved support for larger monitors
+            </li>
             <li>
                 <h4>v0.5.0</h4>
                 Added touch and multitouch support
@@ -171,7 +185,7 @@
             </li>
         </ul>
     </div>
-    <footer class="full footer">© 2021 Julian Blazek
+    <footer class="full footer">© 2024 Julian Blazek
         <br>View the Source Code on <a href="https://github.com/nailujx86/PenBridge/">GitHub</a>.
     </footer>
 </body>
