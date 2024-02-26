@@ -63,7 +63,7 @@
 <body>
     <div class="c">
         <h1>PenBridge</h1>
-        <h5>Beta v0.6.0</h5>
+        <h5>Beta v0.6.2</h5>
         <p>
             PenBridge is an application that allows you to send pen and touch input from any device to your Windows
             device. This means, you can use any device, be it a Surface Tablet, an iPad or a Samsung Tablet with
@@ -75,9 +75,10 @@
         <script type="module" src="https://get.microsoft.com/badge/ms-store-badge.bundled.js"></script>
         <ms-store-badge
             productid="9P7K45N5SND6"
-            window-mode="popup"
+            window-mode="full"
             theme="auto"
-            language="de">
+            language="en-us"
+            animation="on">
         </ms-store-badge>
 
         <div class="r">
@@ -143,12 +144,22 @@
                 issue.
             </li>
             <li>
+                <h4>After switching the monitor with "m" the input gets sent nowhere</h4>
+                Multi-Monitor Support can be flakey, when your primary monitor is not the leftmost monitor with the enumeration "1",
+                since Windows uses a different coordinate system for window positioning and for pointer inputs.
+                You could try setting the monitor you want to send the input to to your primary monitor and then restart PenBridge.
+            </li>
+            <li>
                 <h4>Anything else?</h4>
                 Feel free to leave me a message at <a href="mailto:penbridge@nailuj.net">penbridge@nailuj.net</a>!
             </li>
         </ul>
         <h3>Changelog ⏲</h3>
         <ul>
+            <li>
+                <h4>v0.6.2</h4>
+                Fixed an issue where the tool didn't respect screen scaling set in the windows monitor settings
+            </li>
             <li>
                 <h4>v0.6.0</h4>
                 Added multi-monitor support. Enter "m" in PenBridge to switch the input to the current monitor<br/>
